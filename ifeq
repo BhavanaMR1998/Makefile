@@ -1,0 +1,8 @@
+TEST=ON
+
+buildbegin:
+ifeq ($(TEST),ON)
+	@echo TEST PASSED
+else
+	@echo TEST FAILED
+endif

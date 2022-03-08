@@ -1,0 +1,10 @@
+var2="hello"
+
+.PHONY:main
+main:
+ifdef var2
+	$(info "yes it has data")
+else
+	$(info "yes it has no data")
+endif
+

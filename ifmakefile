@@ -1,0 +1,5 @@
+all:
+	@if [ "test" = $(arg) ];then\
+		echo " arguments accepted " ;fi
+clean:
+	@echo "Nothing to clean"
