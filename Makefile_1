@@ -1,0 +1,22 @@
+
+
+App:	main.o add.o sub.o mul.o div.o
+	gcc -o App main.o add.o sub.o mul.o div.o
+
+main.o:	./main/main.c ./header/main.h
+	gcc -c -I ./header/. ./main/main.c 
+
+add.o:	./add/add.c ./header/main.h
+	gcc -c -I ./header/. ./add/add.c
+
+sub.o:	./sub/sub.c ./header/main.h
+	gcc -c -I ./header/. ./sub/sub.c
+
+mul.o:	./mul/mul.c ./header/main.h
+	gcc -c -I ./header/. ./mul/mul.c
+
+div.o:	./div/div.c ./header/main.h
+	gcc -c -I ./header/. ./div/div.c
+
+clean:	
+	rm -rf *.o App
